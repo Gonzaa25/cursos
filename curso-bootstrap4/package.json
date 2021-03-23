@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap4",
+  "version": "1.0.0",
+  "description": "Primer proyecto del curso",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"node-sass -o css/ css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "diseño-con-bootstrap4"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.16.1"
+  }
+}

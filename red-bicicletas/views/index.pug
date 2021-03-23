@@ -1,0 +1,97 @@
+extends layout
+
+block content
+  // Navigation
+  nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+    .container
+      a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
+      button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        | Menu
+        i.fas.fa-bars
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href='#about') Sobre nosotros
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href='#projects') Proyectos
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href='#signup') Contactar
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href='http://red-bicicletas-gga.herokuapp.com/logout') Cerrar Sesión
+  // Masthead
+  header.masthead
+    .container.d-flex.h-100.align-items-center
+      .mx-auto.text-center
+        h1.mx-auto.my-0.text-uppercase TUPEDIDO
+        h2.text-white-50.mx-auto.mt-2.mb-5 Una plataforma pensada para integrar pedidos de forma online mediante código QR.
+        a.btn.btn-primary.js-scroll-trigger(href='#about') Comenzar
+  // About
+  section#about.about-section.text-center
+    .container
+      .row
+        .col-lg-8.mx-auto
+          h2.text-white.mb-4 Creado con Flutter
+          p.text-white-50
+            | TUPEDIDO es una aplicación multiplataforma pensada para brindarte soluciones en tu local. Podrás visualizar tus pedidos mediante  
+            a(href='https://startbootstrap.com/template-overviews/grayscale/') este link
+            |                             .
+      img.img-fluid(src='images/ipad.png' alt='')
+  // Projects
+  section#projects.projects-section.bg-light
+    .container
+      #main_map
+  // Signup
+  section#signup.signup-section
+    .container
+      .row
+        .col-md-10.col-lg-8.mx-auto.text-center
+          i.far.fa-paper-plane.fa-2x.mb-2.text-white
+          h2.text-white.mb-5 Suscribirse para recibir novedades!
+          form.form-inline.d-flex
+            input#inputEmail.form-control.flex-fill.mr-0.mr-sm-2.mb-3.mb-sm-0(type='email' placeholder='Ingresa tu correo...')
+            button.btn.btn-primary.mx-auto(type='submit') Suscribirme
+  // Contact
+  section.contact-section.bg-black
+    .container
+      .row
+        .col-md-4.mb-3.mb-md-0
+          .card.py-4.h-100
+            .card-body.text-center
+              i.fas.fa-map-marked-alt.text-primary.mb-2
+              h4.text-uppercase.m-0 Dirección
+              hr.my-4
+              .small.text-black-50 1234 Calle falsa, Buenos Aires
+        .col-md-4.mb-3.mb-md-0
+          .card.py-4.h-100
+            .card-body.text-center
+              i.fas.fa-envelope.text-primary.mb-2
+              h4.text-uppercase.m-0 Correo
+              hr.my-4
+              .small.text-black-50
+                a(href='mailto: tupedido@gmail.com') tupedido@gmail.com
+        .col-md-4.mb-3.mb-md-0
+          .card.py-4.h-100
+            .card-body.text-center
+              i.fas.fa-mobile-alt.text-primary.mb-2
+              h4.text-uppercase.m-0 Teléfono
+              hr.my-4
+              .small.text-black-50 +1 (555) 902-8832
+      .social.d-flex.justify-content-center
+        a.mx-2(href='#!')
+          i.fab.fa-twitter
+        a.mx-2(href='#!')
+          i.fab.fa-facebook-f
+        a.mx-2(href='https://github.com/Gonzaa25')
+          i.fab.fa-github
+  // Footer
+  footer.footer.bg-black.small.text-center.text-white-50
+    .container Copyright &copy; Your Website 2020
+  // Bootstrap core JS
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+  // Third party plugin JS
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+  // Core theme JS
+  script(src='/javascripts/scripts.js')
+  script(src='/javascripts/map.js')
+

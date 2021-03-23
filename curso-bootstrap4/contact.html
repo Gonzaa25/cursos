@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    
+    <title>Guia de hoteles</title>
+  </head>
+  <body><!-- Main jumbotron for a primary marketing message or call to action -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class='navbar-brand' href='/'>Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros</a></li>
+            <li><a class="nav-link" href="/price.html">Precios</a></li>
+            <li><a class="nav-link" href="/policy.html">Términos y condiciones</a></li>
+            <li><a class="nav-link active" href="/contact.html">Contacto</a></li>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1>Hoteles</h1>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+          </nav>
+        <h1>Dejame tu comentario</h1>
+        <form action="" method="get">
+          <div class="form-row">
+            <div class="form-group col-sm-6">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre"  placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="apellido">Apellido</label>
+              <input type="text" class="form-control" id="apellido"  placeholder="Ingrese su apellido">
+            </div>
+          </div>
+          <div  class="form-group">
+            <label for="nombre">Email</label>
+            <input type="email" class="form-control" id="email"  placeholder="Ingrese su email">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-sm-9">
+              <label for="domicilio">Domicilio</label>
+              <input type="text" class="form-control" id="domicilio"  placeholder="Ingrese su domicilio">
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="provincia">Provincia</label>
+              <select id="provincia" class="form-control">
+                <option>Capital Federal</option>
+                <option>Buenos Aires</option>
+                <option>Córdoba</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comentario">Comentario</label>
+            <textarea class='form-control'id="comentario" rows="10"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="gridCheck">
+              <label for="gridCheck" class="form-check-label">Quiero que me contacten</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <footer>
+    <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+        <a href="http://www.facebook.com">Facebook</a>
+        <a href="http://www.twitter.com">Twitter</a>
+        <a href="http://www.instagram.com">Instagram</a>
+        </div>
+        <div class="col-sm-4">
+        <address>
+            <h3>Oficina Central</h3>
+            <p><span class="oi oi-home footer-adress-icon"></span>Batallan 3100, 3 de febrero, Argentina</p>
+              <p><span class="oi oi-phone footer-adress-icon"></span>+54 1136699548</p>
+              <p><span class="oi oi-inbox footer-adress-icon"></span>contacto@guiahoteles.com.ar</p>
+        </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a href="http://www.facebook.com">Nosotros</a>
+        <a href="http://www.twitter.com">Términos y condiciones</a>
+        <a href="http://www.instagram.com">Contacto</a>
+        </div>
+    </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+red_bicicletas/node_modules/
+node_modules
+.env
+newrelic.js
